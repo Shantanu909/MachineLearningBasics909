@@ -1,0 +1,15 @@
+#KNN
+ 
+library(base)
+library(class)
+library(mlbench)
+library(caret)
+library(e1071)
+data(Sonar)
+class(Sonar)
+A = Sonar
+data=Sonar[base::sample(nrow(Sonar)),]
+train=data[1:150,]
+test = data[150:nrow(data),]
+nrow(train)
+nrow(test)
